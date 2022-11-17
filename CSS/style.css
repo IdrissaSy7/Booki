@@ -1,0 +1,1186 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url("polices/Raleway/static/Raleway-Medium.ttf");
+}
+
+body {
+	/* Propriété commune de toute la page */
+	font-family: 'Raleway';
+	max-width: 1400px;
+	font-size: 16px;
+	font-weight: 400;
+	height: 1508px;
+}
+
+body a {
+	/* Tout les liens de la page */
+	text-decoration: none;
+	color: black;
+}
+
+/* Partie 1 en tête */
+
+header {
+	margin: 44px 0px 0px 30px;
+}
+
+header img {
+	width: 61.09px;
+	height: 19px;
+	position: absolute;
+	left: 40px;
+}
+
+#entete {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+#menu a {
+	margin-left: 30px;
+	font-size: 16px;
+	padding: 15px
+}
+
+#menu {
+	margin-top: 4px;
+	margin-right: 50px;
+}
+
+#menu a:hover {
+	color: #0065FC;
+	border-top: solid 3px #0065FC;
+	padding-top: 46px;
+	font-weight: 500;
+}
+
+#accueil {
+	margin-top: 63px;
+}
+
+#accueil p {
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 13px;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 11px;
+	font-weight: 400;
+}
+
+header p {
+	margin-top: 8px;
+}
+
+/* Partie 2 barre de recherche */
+
+#recherche {
+	display: flex;
+	margin-left: 30px;
+}
+
+#bordure1 i {
+	/* Icone localisation */
+	font-size: 1em;
+	padding: 16px 18px 15px 18px;
+	background: #F2F2F2;
+	border: 1px solid #F2F2F2;
+	border-radius: 14px 0px 0px 15px;
+}
+
+#recherche button[type=submit] {
+	/* Loupe rechercher, cachée en version desktop et tablette  */
+	display: none;
+}
+
+#bordure1 {
+	display: flex;
+}
+
+#recherche input {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#recherche input[type=search] {
+	/* Champ de recherche */
+	border: 1px solid #F2F2F2;
+	color: black;
+	padding: 14px 118px 14px 16px;
+	width: 90%;
+}
+
+#recherche input[type=submit] {
+	/* Bouton bleu rechercher */
+	background-color: #0065FC;
+	color: white;
+	width: 115px;
+	height: 48px;
+	border: 1px solid #0065FC;
+	border-radius: 0px 15px 15px 0px;
+	margin-right: 967px;
+	position: absolute;
+	left: 300px;
+}
+
+/*PARTIE 3 */
+
+#filtres {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+#filtres h3 {
+	margin: 0px 40px 0px 35px;
+}
+
+#filtres nav {
+	margin-top: 30px;
+	display: flex;
+	justify-content: flex-start;
+	width: 75%;
+	/* Largeur de 75% pour limiter l'espacement à droite */
+}
+
+#filtres nav a {
+	font-size: 15px;
+	font-weight: 700;
+	border: 2px solid #D9D9D9;
+	border-radius: 25px;
+	padding: 10px 16px 10px 16px;
+	margin-right: 3%;
+}
+
+#filtres nav a:hover {
+	background-color: #DEEBFF;
+}
+
+#filtres i {
+	/* Toutes les icones de la section Filtres */
+	color: #0065FC;
+}
+
+.fa-solid.fa-money-bill-wave,
+.fa-solid.fa-dog,
+.fa-solid.fa-person,
+.fa-solid.fa-heart {
+	/* Les 4 icones des filtres*/
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+
+.fa-solid.fa-money-bill-wave,
+.fa-solid.fa-dog {
+	/* Economique, Animaux autorisés */
+	font-size: 20px;
+}
+
+.fa-solid.fa-person,
+.fa-solid.fa-heart {
+	/* Familial, Romantique */
+	font-size: 22px;
+}
+
+/* Image info + texte */
+
+.fa-solid.fa-info {
+	/* Icone info */
+	border: 1px solid #D9D9D9;
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 40px;
+	top: 372px;
+	font-size: 0.7em;
+	padding: 6px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+#filtres p {
+	padding-top: 16px;
+	margin: 42px 0px 0px 65px;
+	font-size: 0.9em;
+}
+
+/* Hebergements */
+
+#hebergements {
+	display: flex;
+	justify-content: space-between;
+}
+
+#hebergements h2 {
+	margin: 10px 0px 0px 15px;
+	width: 300px;
+}
+
+#bloc_gauche h2 {
+	margin-right: 300px;
+	margin-bottom: 20px;
+}
+
+#bloc_droit h2 {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin-top: 30px;
+	margin-bottom: -10px;
+	margin-left: -10px;
+}
+
+#bloc_gauche h3 {
+	margin: 20px 0px 20px 25px;
+}
+
+#bloc_gauche h4,
+#bloc_gauche h6 {
+	margin: 5px 0px 0px 15px;
+}
+
+#bloc_gauche,
+#bloc_droit {
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#bloc_gauche {
+	width: 59%;
+	height: 100%;
+	margin: 30px 10px 0px 25px;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+#bloc_droit {
+	width: 40%;
+	height: 525px;
+	margin: 30px 25px 0px 10px;
+	justify-content: center;
+}
+
+.carte1 {
+	width: 29%;
+	height: 100%;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.carte2 {
+	width: 83%;
+	height: 110px;
+}
+
+.carte1,
+.carte2 {
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 25px rgb(207, 207, 207);
+}
+
+.carte1 a,
+.carte2 a {
+	display: flex;
+	flex-direction: column;
+}
+
+.carte2 a {
+	flex-wrap: wrap;
+	align-content: space-around;
+	height: 110px;
+	width: 100%;
+}
+
+.carte2 h4 {
+	width: 130px;
+}
+
+.soustexte {
+	width: 60%;
+	height: 110px;
+	margin: 0px 0px 40px 0px;
+}
+
+.soustexte h6 {
+	margin-top: -10px;
+	margin-bottom: 30px;
+}
+
+.fa-solid.fa-chart-line {
+	/* L'image a droite du bloc 2 */
+	color: #0065FC;
+	font-size: 0.8em;
+	position: relative;
+	top: 3px;
+}
+
+#bloc_gauche img {
+	/* Regroupe les propriétés communes des 6 images du bloc à gauche */
+	width: 100%;
+	height: 100px;
+	border-radius: 15px 15px 0px 0px;
+	box-sizing: border-box;
+}
+
+#bloc_droit img {
+	/* Regroupe les propriétés communes des 3 images du bloc à droite */
+	width: 40%;
+	height: 110px;
+	border-radius: 15px 0px 0px 15px;
+	margin-right: 10px;
+}
+
+#bloc_droit img,
+#bloc_gauche img {
+	border: 2.5px solid #FFFFFF;
+	box-sizing: border-box;
+	/* Pour compresser le contenu de la boite */
+	object-fit: cover;
+	/* Dimensionne l'image sans toucher au ratio + n'affiche pas ce qui dépasse  */
+}
+
+.carte1 i,
+.carte2 i {
+	/* 4 étoiles bleu */
+	color: #0065FC;
+	font-size: 0.6em;
+}
+
+.carte1 i {
+	/* étoiles bleu gauche*/
+	margin: 8px -18px 10px 15px;
+}
+
+.carte1 i:nth-child(7),
+.carte2 i:nth-child(7) {
+	/* 5ème étoile grise */
+	color: #e3e1e1;
+}
+
+.carte2 i {
+	margin-left: 0px;
+	margin-right: -3px;
+}
+
+.carte2:nth-child(4) h6 {
+	/* Nuit à partir de 68€ */
+	margin-bottom: 26px;
+}
+
+.carte2 h6 {
+	margin-bottom: 10px;
+}
+
+/* Activités */
+
+#activites article {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.blocactivite {
+	width: 21%;
+	height: 325px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 25px rgb(207, 207, 207);
+}
+
+#activites article h2 {
+	flex: 1 100%;
+	margin: 30px 0px 25px 35px;
+}
+
+.blocactivite h4 {
+	margin-left: 15px;
+}
+
+.blocactivite img {
+	width: 100%;
+	height: 280px;
+	border-radius: 15px 15px 0px 0px;
+	box-sizing: border-box;
+	/* Pour compresser le contenu de la boite */
+	object-fit: cover;
+	/* Dimensionne l'image sans toucher au ratio + n'affiche pas ce qui dépasse  */
+}
+
+.blocactivite a {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#activites article div:nth-child(4) img {
+	filter: brightness(1.3);
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: stretch;
+	margin: 4% 2% 0% 2%;
+}
+
+footer div {
+	background-color: #F2F2F2;
+	width: 100%;
+	height: 200px;
+}
+
+footer a {
+	font-size: 0.8em;
+}
+
+footer a,
+footer h3 {
+	margin: 40px 0px 0px 60px;
+}
+
+footer p {
+	margin-bottom: -10px;
+	font-size: 17px;
+}
+
+/* Tablette 992px -> 768px */
+
+@media screen and (max-width: 992px) {
+
+	body {
+		margin: 0px;
+	}
+
+	h1 {
+		font-size: 17px;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	#accueil p {
+		font-size: 13px;
+	}
+
+	/* Entête */
+
+	#menu a {
+		font-size: 13px;
+	}
+
+	#menu a:hover {
+		color: black;
+		border-top: none;
+	}
+
+	/* Barre de recherche */
+
+	#bordure1 i {
+		/* Icone localisation */
+		font-size: 0.9em;
+		padding: 16px 15px 0px 15px;
+	}
+
+	#recherche input {
+		font-size: 14px;
+	}
+
+	#recherche input[type=search] {
+		/* Champ de recherche */
+		width: 85%;
+	}
+
+	#recherche input[type=submit] {
+		/* Bouton bleu rechercher */
+		left: 260px;
+	}
+
+	/* Filtres */
+
+	#filtres h3 {
+		margin: 0px 10px 0px 35px;
+	}
+
+	#filtres nav {
+		width: 88%;
+		/* Largeur de 88% pour limiter l'espacement à droite */
+	}
+
+	#filtres nav a {
+		font-size: 13px;
+	}
+
+	#filtres nav a:hover {
+		background-color: transparent;
+	}
+
+	.fa-solid.fa-money-bill-wave,
+	.fa-solid.fa-dog {
+		/* Economique, Animaux autorisés */
+		font-size: 17px;
+	}
+
+	.fa-solid.fa-person,
+	.fa-solid.fa-heart {
+		/* Familial, Romantique */
+		font-size: 19px;
+	}
+
+	/* Image info + texte */
+
+	.fa-solid.fa-info {
+		/* Icone info */
+		width: 20px;
+		height: 20px;
+		top: 334px;
+		font-size: 0.7em;
+		padding: 4px;
+		text-align: center;
+	}
+
+	#filtres p {
+		margin: 13px 0px 0px 60px;
+		font-size: 0.9em;
+		padding-left: 10px;
+	}
+
+	/* Hebergements */
+
+	#hebergements {
+		flex-direction: column;
+	}
+
+	#hebergements h4 {
+		font-size: 11px;
+	}
+
+	#bloc_gauche,
+	#bloc_droit {
+		box-sizing: border-box;
+	}
+
+	#bloc_gauche {
+		width: 94%;
+		margin: 30px 25px 0px 25px;
+	}
+
+
+	#bloc_gauche h3 {
+		margin: 20px 0px 20px 15px;
+	}
+
+	#bloc_droit h2 {
+		flex: 1 100%;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	#bloc_droit {
+		width: 94%;
+		height: 238px;
+		margin: 30px 25px 0px 25px;
+		justify-content: center;
+	}
+
+	.carte2 {
+		width: 27%;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.carte2 h4 {
+		font-size: 12px;
+		width: 80px;
+		margin-top: 10px;
+	}
+
+	.carte2 h6 {
+		font-size: 11px;
+	}
+
+	.carte2:nth-child(4) h6 {
+		/* Nuit à partir de 68€ */
+		margin-bottom: 30px;
+	}
+
+	.carte2:nth-child(3) h6 {
+		/* Nuit à partir de 71€ */
+		margin-bottom: 17px;
+	}
+
+	.carte2:nth-child(2) h6 {
+		/* Nuit à partir de 128€ */
+		margin-bottom: 30px;
+	}
+
+
+	/* Activités */
+
+	#activites article {
+		margin-top: 30px;
+		justify-content: center;
+	}
+
+	.blocactivite {
+		margin-top: 20px;
+		height: 230px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.blocactivite h4 {
+		margin: 0px 0px 0px 15px;
+	}
+
+	.blocactivite:nth-child(4) h4 {
+		/* Parc national des Calanques */
+
+		width: 120px;
+	}
+
+	.blocactivite:nth-child(5) h4 {
+		/* Notre-Dame-de-la-Garde */
+
+		width: 100px;
+	}
+
+	.blocactivite img {
+		height: 180px;
+	}
+
+	.blocactivite a {
+		height: 100%;
+		display: flex;
+	}
+
+	#activites article div:nth-child(4) img {
+		filter: brightness(1.3);
+	}
+
+	/* Footer */
+
+	footer {
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+	}
+
+	footer p {
+		margin-bottom: -12px;
+	}
+}
+
+/* Mobile 768px -> 320px */
+
+@media screen and (max-width: 768px) {
+
+	/* Entête */
+	header {
+		margin: 20px 0px 0px 0px;
+		width: 100%;
+	}
+
+	header img {
+		width: auto;
+		height: 25px;
+		position: initial;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 70px;
+	}
+
+	#entete {
+		flex-direction: column;
+	}
+
+	#menu {
+		margin-top: 0px;
+		margin-right: 0px;
+		display: flex;
+	}
+
+	#menu a {
+		margin-left: 0px;
+		font-size: 23px;
+		padding: 0px;
+		padding-left: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-bottom: 4px solid #F2F2F2;
+		padding-bottom: 25px;
+	}
+
+	#menu a:hover {
+		color: #0065FC;
+		border-bottom: solid 4px #0065FC;
+		padding-top: 0px;
+	}
+
+	#accueil {
+		margin-top: 30px;
+		margin-left: 20px;
+	}
+
+	#accueil p {
+		font-size: 20px;
+	}
+
+	#accueil h1 {
+		font-size: 28px;
+	}
+
+	header p {
+		margin-top: 12px;
+	}
+
+	/* Barre de recherche */
+
+	#recherche {
+		display: flex;
+		justify-content: stretch;
+		margin-left: 15px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	#formulaire {
+		width: 100%;
+	}
+
+	#barrerecherche {
+		width: 100%;
+		display: flex;
+	}
+
+	#bordure1 i {
+		/* Icones localisation et loupe rechercher */
+		font-size: 1.3em;
+		padding: 18px;
+		border-radius: 20px 0px 0px 21px;
+	}
+
+	#recherche button[type=submit] {
+		/* Loupe rechercher */
+		display: block;
+		color: white;
+		background-color: #0065FC;
+		border-radius: 0px 20px 21px 0px;
+		border: #0065FC;
+		position: relative;
+		right: 20px;
+	}
+
+	#recherche button[type=submit] i {
+		/* Loupe rechercher */
+		background-color: initial;
+		border: #0065FC;
+	}
+
+	#recherche input[type=search] {
+		/* Champ de recherche */
+		width: 100%;
+		height: 100%;
+		font-size: 0.95em;
+		padding-right: 30px;
+	}
+
+	#recherche input[type=submit] {
+		/* Bouton bleu rechercher */
+		display: none;
+	}
+
+
+	/* Filtres */
+
+	#filtres h3 {
+		margin: 0px 0px 0px 20px;
+		font-size: 23px;
+	}
+
+	#filtres nav {
+		margin-left: 20px;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	#filtres nav a {
+		font-size: 18px;
+		padding: 15px;
+		margin-right: 2%;
+		display: flex;
+		margin-bottom: 25px;
+	}
+
+	#filtres nav a:nth-child(1) {
+		/* Economique */
+		padding-right: 64px;
+	}
+
+	#filtres nav a:nth-child(2) {
+		/* Familial */
+		padding-right: 114px;
+	}
+
+	#filtres nav a:nth-child(3) {
+		/* Romantique */
+		padding-right: 66px;
+	}
+
+	#filtres nav a:hover {
+		box-shadow: 0px 5px 4px #c7c7c7;
+	}
+
+	.fa-solid.fa-money-bill-wave,
+	.fa-solid.fa-dog,
+	.fa-solid.fa-person,
+	.fa-solid.fa-heart {
+		/* Les 4 icones des filtres*/
+		top: 0px;
+		margin-right: 10px;
+	}
+
+	.fa-solid.fa-money-bill-wave,
+	.fa-solid.fa-dog {
+		/* Economique, Animaux autorisés */
+		font-size: 22px;
+	}
+
+	.fa-solid.fa-person,
+	.fa-solid.fa-heart {
+		/* Familial, Romantique */
+		font-size: 26px;
+	}
+
+	/* Image info + texte */
+
+	.fa-solid.fa-info {
+		/* Icone info */
+		width: 30px;
+		height: 30px;
+		position: initial;
+		font-size: 0.9em;
+		padding: 3px;
+		text-align: center;
+		margin-right: 10px;
+		vertical-align: 2px;
+	}
+
+	#filtres p {
+		margin: 20px 0px 50px 20px;
+		font-size: 20px;
+	}
+
+	/* Hebergements */
+
+	#hebergements {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#hebergements h2 {
+		margin: 30px 0px 30px 30px;
+		font-size: 26px;
+		width: 80%;
+	}
+
+	#hebergements h4 {
+		font-size: 18px;
+	}
+
+	#hebergements h6 {
+		font-size: 17px;
+	}
+
+	#bloc_gauche,
+	#bloc_droit {
+		background-color: #F2F2F2;
+		border-radius: 0px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	#bloc_gauche h3 {
+		margin: 0px 0px 0px 0px;
+		display: none;
+	}
+
+	#bloc_gauche h4,
+	#bloc_gauche h6 {
+		margin: 5px 0px 0px 15px;
+	}
+
+	#bloc_gauche {
+		background-color: #FFFFFF;
+		height: 100%;
+		margin: 0px 0px 0px 0px;
+		justify-content: space-between;
+		padding: 0px;
+	}
+
+	#bloc_droit {
+		height: 100%;
+		margin: 0px 0px 0px 0px;
+		justify-content: space-between;
+	}
+
+	#bloc_droit h2 {
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+	}
+
+	.carte1,
+	.carte2 {
+		background-color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		border-radius: 15px;
+		box-shadow: 0px 0px 25px rgb(207, 207, 207);
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.carte1 {
+		height: 240px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.carte2 {
+		height: 150px;
+		margin-bottom: 20px;
+	}
+
+	.carte1 a {
+		height: 100%;
+	}
+
+	.carte1 a,
+	.carte2 a {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.carte2 a {
+		flex-wrap: wrap;
+		align-content: space-around;
+		height: 150px;
+		width: 100%;
+		margin-left: 2px;
+	}
+
+	.carte2 h4 {
+		width: 175px;
+	}
+
+	.soustexte {
+		width: 60%;
+		height: 100%;
+		margin: 0px 0px 40px 5px;
+	}
+
+	.soustexte h6 {
+		margin-top: -10px;
+		margin-bottom: 30px;
+	}
+
+	.fa-solid.fa-chart-line {
+		/* L'image a droite du bloc 2 */
+		color: #0065FC;
+		font-size: 0.8em;
+		position: relative;
+		right: 10px;
+		top: 6px;
+	}
+
+	#bloc_gauche img {
+		/* Regroupe les propriétés communes des 6 images du bloc à gauche */
+		width: 100%;
+		height: 150px;
+		border-radius: 15px 15px 0px 0px;
+	}
+
+	#bloc_droit img {
+		/* Regroupe les propriétés communes des 3 images du bloc à droite */
+		width: 40%;
+		height: 150px;
+		border-radius: 15px 0px 0px 15px;
+		margin-right: 0px;
+	}
+
+	#bloc_droit img,
+	#bloc_gauche img {
+		border: 3.5px solid #FFFFFF;
+		box-sizing: border-box;
+		/* Pour compresser le contenu de la boite */
+		object-fit: cover;
+		/* Dimensionne l'image sans toucher au ratio + n'affiche pas ce qui dépasse  */
+	}
+
+	.carte1 i,
+	.carte2 i {
+		/* 4 étoiles bleu */
+		color: #0065FC;
+		font-size: 0.9em;
+	}
+
+	.carte1 i {
+		/* étoiles bleu gauche*/
+		margin: 8px -18px 10px 15px;
+	}
+
+	.carte1 i:nth-child(7),
+	.carte2 i:nth-child(7) {
+		/* 5ème étoile grise */
+		color: #e3e1e1;
+	}
+
+	.carte2 i {
+		margin-left: 0px;
+		margin-right: -3px;
+	}
+
+	.carte2:nth-child(4) h6 {
+		/* Nuit à partir de 68€ */
+		margin-bottom: 50px;
+	}
+
+	.carte2:nth-child(3) h6 {
+		/* Nuit à partir de 71€ */
+		margin-bottom: 30px;
+	}
+
+	.carte2 h6 {
+		margin-bottom: 28px;
+	}
+
+	/* Activités */
+
+	#activites article {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.blocactivite {
+		width: 95%;
+		height: 210px;
+		background-color: #FFFFFF;
+		border-radius: 15px;
+		box-shadow: 0px 0px 25px rgb(207, 207, 207);
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#activites article h2 {
+		flex: 1 10%;
+		margin: 30px 0px -20px 20px;
+		font-size: 26px;
+		width: 40%;
+	}
+
+	.blocactivite h4 {
+		margin-left: 15px;
+		font-size: 19px;
+	}
+
+	.blocactivite img {
+		width: 100%;
+		height: 150px;
+		border-radius: 15px 15px 0px 0px;
+		box-sizing: border-box;
+		/* Pour compresser le contenu de la boite */
+		object-fit: cover;
+		/* Dimensionne l'image sans toucher au ratio + n'affiche pas ce qui dépasse  */
+	}
+
+	.blocactivite a {
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#activites article div:nth-child(4) img {
+		/* Image Parc national des Calanques */
+		filter: brightness(1.3);
+	}
+
+	.blocactivite:nth-child(4) h4 {
+		/* Parc national des Calanques */
+		width: initial;
+	}
+
+	.blocactivite:nth-child(5) h4 {
+		/* Notre-Dame-de-la-Garde */
+		width: initial;
+	}
+
+	/* Footer */
+
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: stretch;
+		margin: 40px 0px 0px 0px;
+	}
+
+	footer div {
+		background-color: #F2F2F2;
+		width: 100%;
+		height: 200px;
+	}
+
+	footer h3 {
+		font-size: 22px;
+	}
+
+	footer a,
+	footer h3 {
+		margin: 40px 0px 0px 20px;
+	}
+
+	footer p {
+		margin-bottom: -15px;
+		font-size: 21px;
+	}
+}
