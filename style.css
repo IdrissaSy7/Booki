@@ -146,6 +146,7 @@ header p {
   border-radius: 0px 15px 15px 0px;
   position: relative;
   right: 80px;
+  font-size: 0.9rem;
 }
 
 #barrerecherche {
@@ -788,8 +789,11 @@ footer p {
     /* Icones localisation et loupe rechercher */
     font-size: 1.3em;
     padding: 18px;
-    background: none;
+  }
+
+  #bordure1 i:last-child {
     border: none;
+    background: none;
   }
 
   .loupe {
