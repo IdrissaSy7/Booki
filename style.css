@@ -110,7 +110,7 @@ header p {
   border-radius: 14px 0px 0px 15px;
 }
 
-#recherche button[type="submit"] {
+.loupe {
   /* Loupe rechercher, cachée en version desktop et tablette  */
   display: none;
 }
@@ -136,7 +136,7 @@ header p {
   width: 90%;
 }
 
-#recherche input[type="submit"] {
+.boutonrecherche {
   /* Bouton bleu rechercher */
   background-color: #0065fc;
   color: white;
@@ -529,12 +529,6 @@ footer p {
     width: 85%;
   }
 
-  #recherche input[type="submit"] {
-    /* Bouton bleu rechercher */
-    left: 260px;
-    height: 46px;
-  }
-
   /* Filtres */
 
   #filtres h3 {
@@ -794,9 +788,11 @@ footer p {
     /* Icones localisation et loupe rechercher */
     font-size: 1.3em;
     padding: 18px;
+    background: none;
+    border: none;
   }
 
-  #recherche button[type="submit"] {
+  .loupe {
     /* Loupe rechercher */
     display: block;
     color: white;
@@ -807,12 +803,6 @@ footer p {
     right: 20px;
   }
 
-  #recherche button[type="submit"] i {
-    /* Loupe rechercher */
-    background-color: initial;
-    border: none;
-  }
-
   #recherche input[type="search"] {
     /* Champ de recherche */
     width: 100%;
@@ -821,7 +811,7 @@ footer p {
     padding-right: 30px;
   }
 
-  #recherche input[type="submit"] {
+  .boutonrecherche {
     /* Bouton bleu rechercher */
     display: none;
   }
