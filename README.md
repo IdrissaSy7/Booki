@@ -1,3 +1,3 @@
 # Booki
 
-Projet d'intégration du site à partir d'une maquette Desktop, Tablette et Mobile.
+Projet d'intégration d'un site à partir d'une maquette Desktop, Tablette et Mobile.
